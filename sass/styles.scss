@@ -1,0 +1,38 @@
+@import 'partials/reset';
+
+//variables
+$buttonColor: rgba(0,0,255,.5);
+$buttonHeight: 100px;
+$buttonWidth: 160px;
+$hoverColor: rgba(255,0,0,.5);
+$hoverHeight: 110px;
+$hoverWidth: 170px;
+
+body {
+  background-image: url('http://s.imwx.com/common/articles/images/water-2113-1_650x366.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 100px;
+  font-size: 2em;
+  font-weight: bolder;
+  color: #00FF00;
+}
+div#button {
+  margin:auto;
+  border-radius: 20px;
+  margin-top: 250px;
+  height: $buttonHeight;
+  width: $buttonWidth;
+  background-color: $buttonColor;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px #888888;
+  &:hover {
+    height: $hoverHeight;
+    width: $hoverWidth;
+    background-color: $hoverColor;
+    color: black;
+    font-weight: bolder;
+    box-shadow: 5px 5px 10px #888888;
+  }
+}
